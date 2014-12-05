@@ -4617,6 +4617,13 @@ public final class Settings {
         public static final String APP_SIDEBAR_SHOW_TRIGGER = "app_sidebar_show_trigger";
 
         /**
+         * Base: Implement ad blocker [2/3]
+	 * Disable ads (HFM)
+	 * @hide
+	 */
+	public static final String HFM_DISABLE_ADS = "hfm_disable_ads";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
