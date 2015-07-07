@@ -70,6 +70,7 @@ namespace android {
 #define IDMAP_CURRENT_VERSION   0x00000001
 
 #define APP_PACKAGE_ID      0x7f
+#define CMSDK_PACKAGE_ID    0x3f
 #define SYS_PACKAGE_ID      0x01
 
 // Standard C isspace() is only required to look at the low byte of its input, so
@@ -5906,6 +5907,7 @@ DynamicRefTable::DynamicRefTable(uint8_t packageId)
     // Reserved package ids
     mLookupTable[APP_PACKAGE_ID] = APP_PACKAGE_ID;
     mLookupTable[SYS_PACKAGE_ID] = SYS_PACKAGE_ID;
+    mLookupTable[CMSDK_PACKAGE_ID] = CMSDK_PACKAGE_ID;
 }
 
 status_t DynamicRefTable::load(const ResTable_lib_header* const header)
@@ -6212,7 +6214,6 @@ bool ResTable::getIdmapInfo(const void* idmap, size_t sizeBytes,
     }
     return true;
 }
-
 
 #define CHAR16_TO_CSTR(c16, len) (String8(String16(c16,len)).string())
 
