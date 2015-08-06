@@ -289,6 +289,10 @@ public class KeyguardStatusBarView extends RelativeLayout
         return false;
     }
 
+    public void updateCarrierLabelColor(int color) {
+        mCarrierLabel.setTextColor(color);
+    }
+
     @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
