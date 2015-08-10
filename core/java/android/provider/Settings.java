@@ -3645,6 +3645,15 @@ public final class Settings {
          */
         public static final String PIE_BUTTON_ALPHA = "pie_button_alpha";
 
+		/**
+         * Status bar weather temperature
+         * 0: Hide the temperature
+         * 1: Display the temperature with scale
+         * 2: Display the temperature without scale
+         * @hide
+         */
+        public static final String STATUS_BAR_SHOW_WEATHER_TEMP = "status_bar_show_weather_temp";
+
         /**
          * Pie button pressed and long pressed alpha
          * @hide
