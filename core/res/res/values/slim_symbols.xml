@@ -191,4 +191,6 @@
   <!-- Fingerprint default name -->
   <java-symbol type="string" name="fingerprint_default_name" />
 
+  <java-symbol type="array" name="config_externalCMServices" />
+
 </resources>

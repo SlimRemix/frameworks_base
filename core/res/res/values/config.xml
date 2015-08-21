@@ -2274,4 +2274,6 @@
         <item>-44</item>
     </integer-array>
 
+    <string-array name="config_externalCMServices"></string-array>
+
 </resources>
