@@ -4659,6 +4659,14 @@ public final class Settings {
         public static final String TOAST_ICON = "toast_icon";
 
         /**
+        /**
+         * Config for advanced power menu
+         *
+         * @hide
+         */
+        public static final String QUICK_TILE_CONFIG = "quick_tile_config";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
