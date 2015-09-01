@@ -72,6 +72,7 @@ import com.android.systemui.statusbar.policy.UserInfoController;
 public class StatusBarHeaderView extends RelativeLayout implements View.OnClickListener, View.OnLongClickListener,
         BatteryController.BatteryStateChangeCallback, NextAlarmController.NextAlarmChangeCallback,
         WeatherController.Callback, StatusBarHeaderMachine.IStatusBarHeaderMachineObserver {
+        static final String TAG = "StatusBarHeaderView";
 
     private boolean mExpanded;
     private boolean mListening;
