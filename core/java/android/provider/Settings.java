@@ -4037,6 +4037,12 @@ public final class Settings {
          */
         public static final String DISPLAY_TEMPERATURE_NIGHT = "display_temperature_night";
 
+         /**
+         * Settings for carrier label font size
+         * @hide
+         */
+        public static final String STATUS_BAR_CARRIER_FONT_SIZE = "status_bar_carrier_font_size";        
+
         /**
          * Display color temperature adjustment mode, one of DAY (default), NIGHT, or AUTO.
          * @hide
