@@ -349,8 +349,7 @@ public class SearchPanelView extends FrameLayout implements StatusBarPanel,
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
-                if (mDraggedFarEnough && (mTargetActivities[mCircle.mIntersectIndex] != null &&
-                        !ACTION_NONE.equals(mTargetActivities[mCircle.mIntersectIndex]))) {
+                if (mDraggedFarEnough) {
                     if (mCircle.isAnimationRunning(true  /* enterAnimation */)) {
                         mLaunchPending = true;
                         mCircle.setAnimatingOut(true);
