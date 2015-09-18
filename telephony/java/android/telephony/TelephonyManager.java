@@ -3845,8 +3845,6 @@ public class TelephonyManager {
             getITelephony().setDataEnabled(subId, enable);
         } catch (RemoteException e) {
             Log.e(TAG, "Error calling setDataEnabled", e);
-        } catch (NullPointerException npe) {
-            Log.e(TAG, "Error calling setDataEnabled", npe);
         }
     }
 
