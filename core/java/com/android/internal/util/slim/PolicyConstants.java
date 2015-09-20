@@ -26,6 +26,7 @@ public class PolicyConstants {
     public static final String ACTION_USERS      = "**users**";
     public static final String ACTION_LOCKDOWN   = "**lockdown**";
     public static final String ACTION_SCREENRECORD = "**screenrecord**";
+    public static final String ACTION_ONTHEGO   = "**onthego**";
 
     public static final String ACTION_DELIMITER  = "|";
     public static final String ICON_EMPTY = "empty";

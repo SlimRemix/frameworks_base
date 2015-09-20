@@ -87,6 +87,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.android.internal.util.nameless.NamelessActions;
+
 /**
  * Helper to show the global actions dialog.  Each item is an {@link Action} that
  * may show depending on whether the keyguard is showing, and whether the device
@@ -265,6 +267,27 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                 mItems.add(getLockdownAction(disabledIcon));
             } else if (actionKey.equals(PolicyConstants.ACTION_SCREENRECORD)) {
                 mItems.add(getScreenRecordAction(disabledIcon));
+            // next: On-The-Go
+            } else if (config.getClickAction().equals(PolicyConstants.ACTION_ONTHEGO)) {
+                mItems.add(
+                    new SinglePressAction(R.drawable.ic_lock_onthego, R.string.global_action_onthego) {
+                        public void onPress() {
+                            NamelessActions.processAction(mContext,
+                                    NamelessActions.ACTION_ONTHEGO_TOGGLE);
+                        }
+
+                        public boolean onLongPress() {
+                            return false;
+                        }
+
+                        public boolean showDuringKeyguard() {
+                            return true;
+                        }
+
+                        public boolean showBeforeProvisioning() {
+                            return true;
+                        }
+                    });
             } else if (actionKey != null) {
                 // must be a screenshot, custom app or action shorcut
                 mItems.add(

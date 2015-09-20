@@ -52,6 +52,7 @@ public class QSConstants {
     public static final String TILE_EXPANDED_DESKTOP = "expanded_desktop";
     public static final String TILE_SLIMACTION = "slimaction";
     public static final String TILE_VOLUME = "volume_panel";
+    //public static final String TILE_ONTHEGO = "toggleOnTheGo";
 
     // Order matters
     protected static final ArrayList<String> TILES_DEFAULT = new ArrayList<String>();
