@@ -218,4 +218,8 @@
 
     <!-- Default fingerprint name when a new fingerprint is added -->
     <string name="fingerprint_default_name">Fingerprint <xliff:g id="number">%d</xliff:g></string>
+
+    <!-- Wifi Hotspot disabled due to subscription change -->
+    <string name="subscription_change_disabled_wifi_ap">Disabled WiFi hotspot due to SIM subscription change</string>
+
 </resources>
