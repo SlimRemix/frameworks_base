@@ -2283,4 +2283,8 @@
 
     <!-- Config to disable showing ringtones from removable storage -->
     <bool name="config_excludeRingtonesFromRemovableStorage">false</bool>
+
+    <!-- Support in Surfaceflinger for blur layers.
+         NOTE: This requires additional hardware-specific code. -->
+    <bool name="config_ui_blur_enabled">false</bool>
 </resources>
