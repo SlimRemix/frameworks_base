@@ -34,6 +34,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.UserInfo;
+import android.graphics.Bitmap;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -1685,4 +1686,8 @@ public class KeyguardViewMediator extends SystemUI {
              }
          }
      }
+
+    public void setBackgroundBitmap(Bitmap bmp) {
+        mStatusBarKeyguardViewManager.setBackgroundBitmap(bmp);
+    }
 }
